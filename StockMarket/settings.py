@@ -23,10 +23,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '+#r*idv#l3*o352&*z#v)ud#i!7rdj&y=$$v^
 
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
+ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://' + host.strip() for host in ALLOWED_HOSTS if host.strip()
+    'https://stock-market-gui-production.up.railway.app',
 ]
 
 
