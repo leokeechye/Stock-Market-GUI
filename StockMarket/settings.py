@@ -28,8 +28,6 @@ ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(','
 +CSRF_TRUSTED_ORIGINS = [
 +    f'https://{host.strip()}' for host in ALLOWED_HOSTS if host.strip()
 +]
-
-+
 # Application definition
 
 INSTALLED_APPS = [
@@ -128,4 +126,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 DATA_UPLOAD_MAX_MEMORY_SIZE = 52428800
+
 
