@@ -1,0 +1,12 @@
+Django==4.2
+yfinance
+numpy
+tensorflow>=2.13.0
+seaborn
+pandas
+matplotlib
+scikit-learn
+mpld3
+tqdm
+gunicorn
+whitenoise

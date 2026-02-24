@@ -1,0 +1,1 @@
+web: gunicorn StockMarket.wsgi --bind 0.0.0.0:$PORT
